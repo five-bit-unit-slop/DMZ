@@ -1,0 +1,6 @@
+from flask import jsonify
+
+def health_check():
+    return jsonify({
+        "status": "online"
+    }), 200
